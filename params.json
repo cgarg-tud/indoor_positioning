@@ -1,0 +1,62 @@
+{    	
+  "output_dir": "output/",
+  "DIM" : "no" ,
+  "LIDAR" : "yes",
+  "cam_dir" : "USER_PC_ALL_CAM/",  
+  "dim_user_dir" : "USER_PC_ALL_DIM/",
+  "lidar_user_dir" : "USER_PC_ALL/",
+  "db_dir" : "LDB_ALL/",
+  
+  "pre_process" : "no",
+  "rigid_align" : "no",  
+  "user_voxel_size" : 10,
+  "db_voxel_size" : 0.3,  
+  
+  "stats_clean" : {
+  "nb_neighbors"  : 10,
+  "std_ratio" : 1.5  
+  },  
+  "radius_clean" : {  
+  "nb_points": 10, 
+  "radius": 3
+  },   
+  
+  "similarity" : "yes",  
+  "features" : {
+  "radius_normal" : 2 ,
+  "max_nn" : 30,
+  "radius_feature" : 5,
+  "max_nn_f" : 100  
+   },
+   
+   "matching" : {
+   "voxel_size" : 0.3,
+   "distance_threshold" : 4,
+   "edge_threshold" : 0.9 ,
+   "normal_threshold" : 1.5 ,   
+   "convergenceCriteria" :  [40000000, 1000000]
+   },
+   
+   "optimize" : {
+   "refine" : "no",
+   "voxel_size" : "0.5",
+   "refine_distance_threshold": 0.6,
+   "pose_optimize" : "no",
+   "max_coarse" : 15,
+   "max_fine" : 1.5         
+   },
+  
+  "add_ceiling" :{  
+  "check" : "no",      
+  "stats_clean" : {
+  "nb_neighbors"  : 30,
+  "std_ratio" : 1.5  
+  },
+  
+  "radius_clean" : {  
+  "nb_points": 30, 
+  "radius": 3
+  }  
+  }
+   
+}
