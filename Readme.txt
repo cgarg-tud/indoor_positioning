@@ -77,5 +77,5 @@ The files are created with the following system specifications:
 
 CREATORS
 -----------
-Chirag Garg - 4817818
+Chirag Garg 
 There are many libraries and examples used, all referenced in the code.
